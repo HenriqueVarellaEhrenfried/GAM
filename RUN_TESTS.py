@@ -129,6 +129,7 @@ CMD = "python src/main.py "
 
 for i in range(0, len(EXPERIMENTS)):
     experiment_number = i+OFFSET
+    print(">> Executando o experiment ", experiment_number, " / " , len(EXPERIMENTS) + OFFSET)
     command = CMD \
         + DEFAULT_TRAIN  \
         + DEFAULT_TEST  \
